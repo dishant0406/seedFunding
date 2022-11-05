@@ -1,0 +1,19 @@
+{
+  "name": "seedfunding",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "description": "",
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^10.1.0",
+    "solc": "^0.4.17",
+    "web3": "^1.8.0"
+  }
+}
