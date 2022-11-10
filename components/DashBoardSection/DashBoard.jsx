@@ -8,14 +8,10 @@ const DashBoard = ({contract}) => {
 
   return (
     <div>
-      <div className='flex w-[95vw] justify-center'>
-        {/* <button onClick={()=>router.push('/campaigns/new')} className="btn btn-wide gap-2 btn-primary">
-          <i className="fa-solid  text-[18px] text-white fa-circle-plus"></i>
-          Create Campaign
-        </button> */}
+      <div className='relative flex w-[100vw] md:w-[95vw] justify-center'>
         <Create/>
       </div>
-      <div className='h-[85vh] flex-wrap gap-[2rem] w-[95vw] flex items-center justify-center'>
+      <div className='h-[85vh] flex-wrap gap-[2rem] w-[100vw] md:w-[95vw] flex items-center justify-center'>
           {contract.map(con=>{
             return <Card contract={con}/>
           })}
