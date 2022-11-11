@@ -50,7 +50,7 @@ const Contribute = ({summary, id}) => {
             </label>
             <label className="input-group">
               <span>Contri</span>
-              <input value={contri} onChange={(e)=>setContri(e.target.value)} type="number" placeholder={web3.utils.fromWei(summary[0], 'ether')+' Min'} className="input input-bordered" />
+              <input value={contri} onChange={(e)=>setContri(e.target.value)} type="number" placeholder={web3.utils.fromWei(summary[0], 'ether')+' Min'} className="input w-[80%] input-bordered" />
               <span>ETH</span>
             </label>
           </div>

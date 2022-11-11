@@ -14,10 +14,12 @@ const Create = () => {
 
   const handleClick = (e)=>{
     e.stopPropagation()
-    setErr('')
-    setOpen(false)
-    setName('')
-    setEth(0)
+    if(!loading){
+      setErr('')
+      setOpen(false)
+      setName('')
+      setEth(0)
+    }
   }
 
   const handleCreate = async (e)=>{
