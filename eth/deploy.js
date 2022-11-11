@@ -24,7 +24,7 @@ const deploy = async () => {
 
   const storeTheAddress = async () => {
     try {
-      await fs.outputFile(`${__dirname}/deployedAddress.js`, result.options.address)
+      await fs.outputFile(`${__dirname}/deployedAddress.js`, `{deployedAddress: ${result.options.address}}`)
     } catch (err) {
       console.error(err)
     }

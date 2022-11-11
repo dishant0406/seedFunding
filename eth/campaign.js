@@ -1,4 +1,6 @@
 import web3 from "./web3";
-import Campaign from './build/Campaign.json'
+import CampaignJson from './build/Campaign.json'
 
-const instance = new web3.eth.Contract(JSON.parse(Campaign.interface), '')
+export default (id) => {
+  return new web3.eth.Contract(JSON.parse(CampaignJson.interface), id)
+}
