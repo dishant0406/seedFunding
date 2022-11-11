@@ -15,7 +15,8 @@ const Card = ({contract}) => {
       <figure style={{height:'200px !important'}}><img className='w-[550px]' style={{height:'200px !important'}} src="https://source.unsplash.com/random/200x200/?black" alt="Campaign" /></figure>
       </div> */}
       <div className="card-body">
-        <h2 className="card-title break-normal">{contract}</h2>
+        <h2 className="card-title md:block hidden break-normal">{contract}</h2>
+        <h2 className="card-title md:hidden block break-normal">{contract.substring(1,23)+'...'}</h2>
         <p></p>
         <div className="card-actions justify-end">
           <button className="btn btn-primary" onClick={handleClick}>View Campaign</button>
