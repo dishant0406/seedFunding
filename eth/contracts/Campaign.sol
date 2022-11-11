@@ -28,7 +28,7 @@ contract Campaign{
     uint public minimumContribution;
     mapping(address=>bool) public approvers;
     uint public approversCount;
-    string CampainName;
+    string public CampaignName;
 
     modifier restricted(){
         require(msg.sender==manager);
@@ -41,7 +41,7 @@ contract Campaign{
 
 
     function Campaign(uint minimumContri, address createrAddress, string name) public{
-        CampainName=name;
+        CampaignName=name;
         manager = createrAddress;
         minimumContribution=minimumContri;
     }
@@ -50,8 +50,11 @@ contract Campaign{
     function contribute() public payable{
         require(msg.value>minimumContribution);
         
+        if(approvers[msg.sender]==false){
+            approversCount++;
+        }
         approvers[msg.sender]=true;
-        approversCount++;
+        
     }
 
     function createRequest(string desc, uint val, address resp) public restricted{

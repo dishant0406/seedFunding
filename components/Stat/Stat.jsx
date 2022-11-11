@@ -4,7 +4,7 @@ import web3 from '../../eth/web3'
 const Stat = ({stats}) => {
   return (
     <div className='flex justify-center w-[100vw] mt-[2rem]'>
-      <div className="md:w-[95%] w-[80%] stats shadow bg-neutral text-primary-content">
+      <div id='style-3' className="md:w-[95%] rounded-b-[0px] w-[80%] stats shadow bg-neutral text-primary-content">
         <div className="stat">
           <div className="stat-figure text-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
